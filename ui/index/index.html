@@ -1,0 +1,491 @@
+<html class="  ext-strict">
+
+<head>
+  <meta charset="utf-8">
+  <title>发现导航 - 精选实用导航网站</title>
+  <base href="./">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="renderer" content="webkit">
+  <meta name="description" content="发现导航 - 精选实用导航网站">
+  <meta name="keywords" content="导航,前端资源,社区站点,设计师,实用工具,学习资源,运营,网络安全,node.js">
+  <link rel="stylesheet" href="styles.fd746decc0426e79bea6.css">
+  <style>
+    #xiejiahe.app[_ngcontent-nqt-c0] {
+      color: #000
+    }
+
+    #xiejiahe[_ngcontent-nqt-c0] .footer[_ngcontent-nqt-c0] {
+      text-align: center;
+      margin-top: 10px;
+      color: #fff;
+      font-size: 12px
+    }
+
+    #xiejiahe[_ngcontent-nqt-c0] .footer[_ngcontent-nqt-c0] .total[_ngcontent-nqt-c0] {
+      margin-left: 5px;
+      vertical-align: super;
+      font-weight: 700
+    }
+
+    #xiejiahe[_ngcontent-nqt-c0] .footer[_ngcontent-nqt-c0] .runtime[_ngcontent-nqt-c0] {
+      font-weight: 700
+    }
+  </style>
+  <style>
+    .bg-color-linear[_ngcontent-nqt-c1] {
+      z-index: -3;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      transition: 1s linear;
+      background-image: linear-gradient(19deg, #3eecac 0, #ee74e1 100%)
+    }
+
+    .homepage[_ngcontent-nqt-c1] {
+      position: relative;
+      margin-top: 20px;
+      height: calc(100vh - 60px);
+      background: #fbfbfb;
+      border-radius: 5px;
+      overflow: hidden;
+      transition: .1s linear
+    }
+
+    .homepage[_ngcontent-nqt-c1] .search[_ngcontent-nqt-c1] {
+      z-index: 66666;
+      position: fixed;
+      top: 250px;
+      left: 50%;
+      width: 600px;
+      padding: 10px;
+      border-radius: 10px;
+      -webkit-transform: translate(-50%, 0);
+      transform: translate(-50%, 0);
+      background: #e5e5ea;
+      font-size: 26px;
+      border: 1px solid #ccc;
+      box-shadow: 0 4px 8px 1px #ccc
+    }
+
+    .homepage[_ngcontent-nqt-c1] .no-result[_ngcontent-nqt-c1] {
+      margin-top: 80px;
+      text-align: center
+    }
+
+    .homepage[_ngcontent-nqt-c1] .no-result[_ngcontent-nqt-c1] .back[_ngcontent-nqt-c1] {
+      margin-top: 30px
+    }
+
+    .homepage[_ngcontent-nqt-c1] .no-result[_ngcontent-nqt-c1] .back[_ngcontent-nqt-c1] span[_ngcontent-nqt-c1] {
+      cursor: pointer
+    }
+
+    .homepage[_ngcontent-nqt-c1] .loading[_ngcontent-nqt-c1] {
+      z-index: 6666;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #fbfbfb;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center
+    }
+
+    .homepage[_ngcontent-nqt-c1] .top-nav[_ngcontent-nqt-c1] {
+      padding: 10px;
+      overflow: none;
+      white-space: nowrap;
+      border-bottom: 1px solid #eee;
+      text-align: center
+    }
+
+    .homepage[_ngcontent-nqt-c1] .top-nav[_ngcontent-nqt-c1] a[_ngcontent-nqt-c1] {
+      display: inline-block;
+      padding: 10px 15px;
+      color: #000;
+      cursor: pointer;
+      border-radius: 5px;
+      overflow: hidden
+    }
+
+    .homepage[_ngcontent-nqt-c1] .top-nav[_ngcontent-nqt-c1] a[_ngcontent-nqt-c1]:hover {
+      text-decoration: none
+    }
+
+    .index-section[_ngcontent-nqt-c1] {
+      position: relative;
+      height: calc(100% - 52px);
+      overflow: hidden
+    }
+
+    .index-section[_ngcontent-nqt-c1] .icon-box[_ngcontent-nqt-c1] {
+      position: absolute;
+      bottom: 20px;
+      left: 0;
+      right: 0;
+      text-align: center
+    }
+
+    .index-section[_ngcontent-nqt-c1] .icon-box[_ngcontent-nqt-c1] .icon[_ngcontent-nqt-c1] {
+      width: 20px
+    }
+
+    .index-section[_ngcontent-nqt-c1] .sidebar[_ngcontent-nqt-c1] {
+      position: relative;
+      width: 80px;
+      height: 100%;
+      text-align: center;
+      border-right: 1px solid #eee
+    }
+
+    .index-section[_ngcontent-nqt-c1] .sidebar[_ngcontent-nqt-c1] .tag[_ngcontent-nqt-c1] {
+      position: relative;
+      cursor: pointer
+    }
+
+    .index-section[_ngcontent-nqt-c1] .sidebar[_ngcontent-nqt-c1] .tag.active[_ngcontent-nqt-c1] {
+      color: #1890ff
+    }
+
+    .index-section[_ngcontent-nqt-c1] .sidebar[_ngcontent-nqt-c1] .tag.active[_ngcontent-nqt-c1] a[_ngcontent-nqt-c1]:after {
+      top: 0;
+      border-top: 1px dashed #ccc
+    }
+
+    .index-section[_ngcontent-nqt-c1] .sidebar[_ngcontent-nqt-c1] .tag.active[_ngcontent-nqt-c1] a[_ngcontent-nqt-c1]:before {
+      bottom: 0;
+      border-bottom: 1px dashed #ccc
+    }
+
+    .index-section[_ngcontent-nqt-c1] .sidebar[_ngcontent-nqt-c1] .tag[_ngcontent-nqt-c1] a[_ngcontent-nqt-c1] {
+      display: block;
+      padding: 11px 0
+    }
+
+    .index-section[_ngcontent-nqt-c1] .sidebar[_ngcontent-nqt-c1] .tag[_ngcontent-nqt-c1] a[_ngcontent-nqt-c1]:after,
+    .index-section[_ngcontent-nqt-c1] .sidebar[_ngcontent-nqt-c1] .tag[_ngcontent-nqt-c1] a[_ngcontent-nqt-c1]:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 100%
+    }
+
+    .index-section[_ngcontent-nqt-c1] .main[_ngcontent-nqt-c1] {
+      position: absolute;
+      top: 0;
+      left: 80px;
+      right: 0;
+      bottom: 30px;
+      padding-bottom: 50px;
+      overflow-y: auto
+    }
+
+    .index-section[_ngcontent-nqt-c1] .main[_ngcontent-nqt-c1] .icon[_ngcontent-nqt-c1] {
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      vertical-align: middle;
+      border-radius: 50%;
+      pointer-events: none;
+      border: 1px solid #eee
+    }
+
+    .index-section[_ngcontent-nqt-c1] .main[_ngcontent-nqt-c1] .name[_ngcontent-nqt-c1] {
+      display: inline-block;
+      font-size: 16px;
+      margin-left: 5px;
+      width: calc(100% - 50px);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      vertical-align: middle
+    }
+
+    .index-section[_ngcontent-nqt-c1] .main[_ngcontent-nqt-c1] .desc[_ngcontent-nqt-c1] {
+      padding: 5px 10px;
+      border-top: 1px solid #eee;
+      margin-top: 8px;
+      word-break: break-all;
+      word-wrap: break-word;
+      font-size: 12px
+    }
+
+    .index-section[_ngcontent-nqt-c1] .main[_ngcontent-nqt-c1] .mark[_ngcontent-nqt-c1] {
+      z-index: 28;
+      position: absolute;
+      bottom: -50px;
+      left: 0;
+      width: 100%;
+      padding: 10px 0 5px;
+      background: #fbfbfb;
+      cursor: auto;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      transition: .1s linear
+    }
+
+    .index-section[_ngcontent-nqt-c1] .main[_ngcontent-nqt-c1] .mark[_ngcontent-nqt-c1] .button-box[_ngcontent-nqt-c1] {
+      width: 100%;
+      text-align: center
+    }
+
+    .index-section[_ngcontent-nqt-c1] .main[_ngcontent-nqt-c1] .mark[_ngcontent-nqt-c1] a[_ngcontent-nqt-c1] {
+      display: inline-block;
+      position: relative;
+      width: 50px;
+      font-size: 12px;
+      padding: 3px 0;
+      border: none;
+      background: #2db7f5;
+      color: #fff;
+      border-radius: 3px;
+      overflow: hidden
+    }
+
+    .index-section[_ngcontent-nqt-c1] .main[_ngcontent-nqt-c1] .mark[_ngcontent-nqt-c1] a[_ngcontent-nqt-c1]:not(:nth-last-child(1)) {
+      margin-right: 10px
+    }
+
+    .index-section[_ngcontent-nqt-c1] .main[_ngcontent-nqt-c1] .mark[_ngcontent-nqt-c1] a[_ngcontent-nqt-c1]:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #000;
+      opacity: 0
+    }
+
+    .index-section[_ngcontent-nqt-c1] .main[_ngcontent-nqt-c1] .mark[_ngcontent-nqt-c1] a[_ngcontent-nqt-c1]:active:after {
+      opacity: .2
+    }
+
+    .index-section[_ngcontent-nqt-c1] .main[_ngcontent-nqt-c1] .mark[_ngcontent-nqt-c1] .zh[_ngcontent-nqt-c1] {
+      background: #26a2ff
+    }
+
+    .index-section[_ngcontent-nqt-c1] .main[_ngcontent-nqt-c1] .title-wrapper[_ngcontent-nqt-c1] {
+      border-bottom: 1px solid #ccc;
+      padding: 10px 0 10px 15px
+    }
+
+    .index-section[_ngcontent-nqt-c1] .main[_ngcontent-nqt-c1] .title-wrapper[_ngcontent-nqt-c1]:hover .edit[_ngcontent-nqt-c1] {
+      display: inline-block
+    }
+
+    .index-section[_ngcontent-nqt-c1] .main[_ngcontent-nqt-c1] .block-title[_ngcontent-nqt-c1] {
+      display: inline-block;
+      position: relative;
+      color: #3f51b5
+    }
+
+    .index-section[_ngcontent-nqt-c1] .main[_ngcontent-nqt-c1] .block-title[_ngcontent-nqt-c1] .edit[_ngcontent-nqt-c1] {
+      display: none;
+      position: absolute;
+      top: -2px;
+      right: -25px;
+      width: 15px;
+      height: 15px;
+      margin-left: 5px;
+      margin-top: 5px;
+      background: url(https://xiejiahe.gitee.io/nav/assets/img/edit.svg) 0 0/15px
+    }
+
+    .index-section[_ngcontent-nqt-c1] .main[_ngcontent-nqt-c1] .top[_ngcontent-nqt-c1] {
+      padding: 10px
+    }
+
+    .index-section[_ngcontent-nqt-c1] .row[_ngcontent-nqt-c1] {
+      display: flex;
+      flex-wrap: wrap
+    }
+
+    .index-section[_ngcontent-nqt-c1] .row[_ngcontent-nqt-c1] a[_ngcontent-nqt-c1] {
+      color: #333
+    }
+
+    .index-section[_ngcontent-nqt-c1] .row[_ngcontent-nqt-c1] a[_ngcontent-nqt-c1]:hover {
+      text-decoration: none
+    }
+
+    .index-section[_ngcontent-nqt-c1] .row[_ngcontent-nqt-c1] .click-btn[_ngcontent-nqt-c1] {
+      z-index: 1111;
+      position: relative;
+      width: 200px;
+      margin: 12px;
+      border: 1px solid #eee;
+      overflow: hidden
+    }
+
+    .index-section[_ngcontent-nqt-c1] .row[_ngcontent-nqt-c1] .click-btn[_ngcontent-nqt-c1]:hover .mark[_ngcontent-nqt-c1] {
+      bottom: 0
+    }
+  </style>
+  <style>
+    @keyframes rough-notation-dash {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+  </style>
+</head>
+
+<body class=" ext-webkit ext-chrome ext-mac" id="syno-nsc-ext-gen3" style="">
+  <app-xiejiahe _nghost-nqt-c0="" ng-version="8.0.3">
+    <div _ngcontent-nqt-c0="" class="app" id="xiejiahe">
+      <router-outlet _ngcontent-nqt-c0=""></router-outlet>
+      <app-home _nghost-nqt-c1="">
+        <main _ngcontent-nqt-c1="" class="homepage container">
+          <div _ngcontent-nqt-c1="" class="bg-color-linear" id="index-background"
+            style="opacity: 1; background-image: linear-gradient(147deg, rgb(255, 229, 59) 0%, rgb(255, 37, 37) 74%);">
+          </div>
+          <!---->
+          <nav _ngcontent-nqt-c1="" class="top-nav user-select-none">
+            <!----><a _ngcontent-nqt-c1="" class="ripple-btn active"> 我的 app </a><svg class="rough-annotation"
+              style="position: absolute; top: 0px; left: 0px; overflow: visible; pointer-events: none; width: 100px; height: 100px;">
+              <path
+                d="M457.47299838997424 55.10528244636953 C480.7502012655139 53.79732998406514, 498.98151524029674 52.197206876631824, 540.1165312025696 53.07767923735082"
+                fill="none" stroke="red" stroke-width="3"
+                style="stroke-dashoffset: 82.7001; stroke-dasharray: 82.7001; animation: 389.574ms ease-out 0ms 1 normal forwards running rough-notation-dash;">
+              </path>
+              <path
+                d="M542.3616077508777 53.16774261929095 C515.2945061303675 52.76318581303582, 492.577950393036 51.81129075488076, 455.2705375161022 54.11643976904452"
+                fill="none" stroke="red" stroke-width="3"
+                style="stroke-dashoffset: 87.1267; stroke-dasharray: 87.1267; animation: 410.426ms ease-out 389.574ms 1 normal forwards running rough-notation-dash;">
+              </path>
+            </svg></nav>
+          <section _ngcontent-nqt-c1="" class="index-section user-select-none">
+            <aside _ngcontent-nqt-c1="" class="sidebar" id="sidebar">
+              <ul _ngcontent-nqt-c1="">
+                <!---->
+                <li _ngcontent-nqt-c1="" class="tag active">
+                  <!----><a _ngcontent-nqt-c1="" class="ripple-btn">我的服务</a></li>
+              </ul>
+
+            </aside>
+            <div _ngcontent-nqt-c1="" class="main" id="main">
+              <!---->
+              <!---->
+              <ul _ngcontent-nqt-c1="">
+                <!---->
+                <li _ngcontent-nqt-c1="">
+                  <!---->
+                  <div _ngcontent-nqt-c1="" class="title-wrapper">
+                    <h2 _ngcontent-nqt-c1="" class="block-title"> 全部 x 8 <a _ngcontent-nqt-c1="" class="edit"
+                        rel="noopener noreferer" target="_blank" title="编辑"
+                        href="https://github.com/xjh22222228/nav/tree/master/data"></a></h2>
+                  </div>
+                  <div _ngcontent-nqt-c1="" class="row">
+                    <div _ngcontent-nqt-c1="" class="click-btn"><a _ngcontent-nqt-c1="" rel="noopener noreferer"
+                        target="_blank" href="http://my.domain:82/">
+                        <div _ngcontent-nqt-c1="" class="top"><img _ngcontent-nqt-c1="" alt="" class="icon"
+                            src="assets/img/ttrss.png"><em _ngcontent-nqt-c1="" class="name">TinyRSS</em></div>
+                        <div _ngcontent-nqt-c1="" class="desc">RSS 阅读</div>
+                      </a>
+                    </div>
+                    <div _ngcontent-nqt-c1="" class="click-btn"><a _ngcontent-nqt-c1="" rel="noopener noreferer"
+                        target="_blank" href="http://my.domain:83/">
+                        <div _ngcontent-nqt-c1="" class="top"><img _ngcontent-nqt-c1="" alt="" class="icon"
+                            src="assets/img/ebook.ico"><em _ngcontent-nqt-c1="" class="name">书籍管理</em></div>
+                        <div _ngcontent-nqt-c1="" class="desc">calibre书籍管理</div>
+                      </a>
+                    </div>
+                    <div _ngcontent-nqt-c1="" class="click-btn"><a _ngcontent-nqt-c1="" rel="noopener noreferer"
+                        target="_blank" href="http://my.domain:89/">
+                        <div _ngcontent-nqt-c1="" class="top"><img _ngcontent-nqt-c1="" alt="" class="icon"
+                            src="assets/img/wiznote.jpeg"><em _ngcontent-nqt-c1="" class="name">笔记</em></div>
+                        <div _ngcontent-nqt-c1="" class="desc">笔记</div>
+                      </a>
+                    </div>
+                    <div _ngcontent-nqt-c1="" class="click-btn"><a _ngcontent-nqt-c1="" rel="noopener noreferer"
+                        target="_blank" href="http://my.domain:84/">
+                        <div _ngcontent-nqt-c1="" class="top"><img _ngcontent-nqt-c1="" alt="" class="icon"
+                            src="assets/img/kode.png"><em _ngcontent-nqt-c1="" class="name">可道云</em></div>
+                        <div _ngcontent-nqt-c1="" class="desc">可道云</div>
+                      </a>
+                      <!---->
+                    </div>
+                    <div _ngcontent-nqt-c1="" class="click-btn"><a _ngcontent-nqt-c1="" rel="noopener noreferer"
+                        target="_blank" href="https://my.domain:85/">
+                        <div _ngcontent-nqt-c1="" class="top"><img _ngcontent-nqt-c1="" alt="" class="icon"
+                            src="assets/img/bitwarden.png"><em _ngcontent-nqt-c1="" class="name">Bitwarden</em></div>
+                        <div _ngcontent-nqt-c1="" class="desc">密码管理</div>
+                      </a>
+                    </div>
+                    <div _ngcontent-nqt-c1="" class="click-btn"><a _ngcontent-nqt-c1="" rel="noopener noreferer"
+                        target="_blank" href="http://my.domain:88/">
+                        <div _ngcontent-nqt-c1="" class="top"><img _ngcontent-nqt-c1="" alt="" class="icon"
+                            src="assets/img/wallabag.png"><em _ngcontent-nqt-c1="" class="name">wallabag</em></div>
+                        <div _ngcontent-nqt-c1="" class="desc">wallabag</div>
+                      </a>
+                    </div>
+                    <div _ngcontent-nqt-c1="" class="click-btn"><a _ngcontent-nqt-c1="" rel="noopener noreferer"
+                        target="_blank" href="http://my.domain:86">
+                        <div _ngcontent-nqt-c1="" class="top"><img _ngcontent-nqt-c1="" alt="" class="icon"
+                            src="assets/img/wordpress.png"><em _ngcontent-nqt-c1="" class="name">wordpress</em></div>
+                        <div _ngcontent-nqt-c1="" class="desc">博客</div>
+                      </a>
+                    </div>
+                    <div _ngcontent-nqt-c1="" class="click-btn"><a _ngcontent-nqt-c1="" rel="noopener noreferer"
+                        target="_blank" href="http://my.domain:9091">
+                        <div _ngcontent-nqt-c1="" class="top"><img _ngcontent-nqt-c1="" alt="" class="icon"
+                            src="assets/img/transmission.png"><em _ngcontent-nqt-c1="" class="name">transmission</em>
+                        </div>
+                        <div _ngcontent-nqt-c1="" class="desc">transmission</div>
+                      </a>
+                      <!---->
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <!---->
+            </div>
+          </section>
+        </main>
+      </app-home>
+    </div>
+  </app-xiejiahe>
+  <script src="./assets/js/jquery.min.js"></script>
+  <script src="./assets/js/ripple.min.js"></script>
+  <script src="runtime-es2015.858f8dd898b75fe86926.js" type="module"></script>
+  <script src="polyfills-es2015.5728f680576ca47e99fe.js" type="module"></script>
+  <script src="runtime-es5.741402d1d47331ce975c.js" nomodule=""></script>
+  <script src="polyfills-es5.4e06eb653a3c8a2d581f.js" nomodule=""></script>
+
+  <div id="syno-nsc-ext-comp-1008" class=" x-tip-invalid"
+    style="position: absolute; z-index: 11000; visibility: hidden; display: none;">
+    <div class="x-tip-invalid-tl">
+      <div class="x-tip-invalid-tr">
+        <div class="x-tip-invalid-tc">
+          <div class="x-tip-invalid-header x-unselectable" id="syno-nsc-ext-gen4"><span
+              class="x-tip-invalid-header-text"></span></div>
+        </div>
+      </div>
+    </div>
+    <div class="x-tip-invalid-bwrap" id="syno-nsc-ext-gen5">
+      <div class="x-tip-invalid-ml">
+        <div class="x-tip-invalid-mr">
+          <div class="x-tip-invalid-mc" id="syno-nsc-ext-gen8">
+            <div class="x-tip-invalid-body" id="syno-nsc-ext-gen6" style="height: auto;"></div>
+          </div>
+        </div>
+      </div>
+      <div class="x-tip-invalid-bl x-panel-nofooter" id="syno-nsc-ext-gen7">
+        <div class="x-tip-invalid-br">
+          <div class="x-tip-invalid-bc"></div>
+        </div>
+      </div>
+    </div>
+    <div class="x-tip-anchor x-tip-anchor-top" id="syno-nsc-ext-gen9" style="z-index: 11001;"></div>
+  </div>
+</body>
+
+</html>
