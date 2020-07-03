@@ -8,8 +8,8 @@
 # 86 wordpress
 # 88 wallabag https
 # 89 wiznote
-# transmission 9091
-# funcInstallJellyfin 8096
+# 9091 transmission
+# 8096 Jellyfin 8096
 
 GITDIR=$(pwd)
 export PATH=$PATH":/usr/sbin/:/sbin/:/usr/local/sbin"

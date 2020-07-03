@@ -32,6 +32,11 @@ deb https://mirrors.tuna.tsinghua.edu.cn/debian/ buster-backports main contrib n
 deb https://mirrors.tuna.tsinghua.edu.cn/debian-security buster/updates main contrib non-free
 # deb-src https://mirrors.tuna.tsinghua.edu.cn/debian-security buster/updates main contrib non-free
 EOF
+
+    sysver=$(cat /etc/debian_version | awk -F '.' '{print $1}')
+    if [ $sysver -eq 9 ]; then
+        sed -i 's/buster/stretch/g' /etc/apt/sources.list
+    fi
     apt update && apt upgrade -y
     apt install -y zip unzip
 }
